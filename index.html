@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CS 491 - Project 2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+
+  <style>
+    body {font-family: "Lato", sans-serif;}
+    
+    /* Style the tab */
+    div.tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+    }
+    
+    /* Style the buttons inside the tab */
+    div.tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+    
+    /* Change background color of buttons on hover */
+    div.tab button:hover {
+        background-color: #ddd;
+    }
+    
+    /* Create an active/current tablink class */
+    div.tab button.active {
+        background-color: #ccc;
+    }
+    
+    /* Style the tab content */
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">CS 491</a>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-8 text-left">
+      <h1>CS 491 - project 2</h1>
+      <p></p>
+      <hr>
+      <div>
+        <h3>Here Comes the Sun</h3>
+        <p style="text-indent :5em;" >    
+          My initial thoughts on the demos was something like, "gee wiz, this class is awesome!"
+          The first thing I went to was the HTC Vive.  The Vive is really cool because it tracks
+          all of your movement based on two hands and a headset.  And then all the extrapolated 
+          data that comes with it: wingspan, height, shoulder distance, and other areas of 
+          measurement.  It was a fun experience and I understand why people would fall down while 
+          trying to navigate through Google Earth.  It feels like you are in a different space
+          and that the you have a lot of control of what your seeing through the Vive.  There is 
+          not that much that is holding you back from flying around the world; it all comes down 
+          to imagination and how you use it to navigate through a virtual world.
+        </p>
+        <p style="text-indent: 5em;" >
+          To Compare the Google Earth VR and the Circus Games VR, they both use the controls 
+          in different ways.  The Google Earth VR uses the hand controls to navigate around 
+          the map, whereas the Circus Games uses it to actually be your hands in virtual 
+          space.  It is some weird emulation that is being occured to allow someone to think 
+          that their physics hands are actually being used in virtual space like that.  It 
+          kind of gives a sense of a false reality.  Some negative to come from that would 
+          be that the user would actually choose to stay in virtual space rather than in 
+          reality.  There are a lot of movies that have the idea of being "plugged in", and 
+          I think that that is becoming more and more prominent in the reality that we live 
+          in right now with all the new technologies that allow people to feel like that.
+        </p>
+        <p style="text-indent: 5em;" >
+          But moving from VR, I want to talk about the AR.  The HoloLens is really bringing 
+          reality in virtual world.  The game that we played, some space alien shooter game, 
+          was a cool way to integrate the real world with a virtual world.  I am not sure why 
+          but it felt like it was the norm of how people should live.  Having something 
+          be augmented over the real world, visually, can become very handy in more than one 
+          case.  For construction workers to be able to see what they are working with or 
+          if they need to take things apart, they can see that in augmented reality before 
+          acually doing something.  Something like this would be good in the medical field 
+          to show a body while in surgery to make better educated decisions on where to 
+          have the surgery.
+        </p>
+        <p style="text-indent: 5em;" >
+          Moving on from AR and VR, I played with the SAGE2 Wall and the Cave 2.  Both of 
+          them are very unique in their own way and they provide ways of visualizing things 
+          that were previously very difficult to view.  In the Cave, we were shown a demo 
+          about the the inside of the brain with the connections.  We were able to move 
+          in close and view the different directions of connections that were in the brain.
+            That is very useful in the medical field.  They can teach classes in different 
+          ways.  Before, students would have to imagine what the demos would look like, but 
+          being inside of an environment where the users can see, in real time, the brain 
+          and see what they are learning.  I was also shown that a team from NASA was in 
+          the Cave and they were testing out a robot probe that would send signals out and 
+          map the bottom of the ocean.  That is a very unique thing to be able to visualize 
+          in a space that is all around you rather than just in a small rectangle that is 
+          infront of your face.
+        </p>
+        <p style="text-indent: 5em;" >
+          To talk more about the SAGE wall, in a classroom, that is phenominal.  It really 
+          helps students be able to see what a professor is talking about and be able to 
+          see up close what is happening.  Having such a big screen to display a lot of 
+          information to the students all at once gives a student time to digest the information 
+          and be able to know what they are learning at a faster rate.  For me personally, 
+          if I can see a big set of information and be able to work through it whilst the 
+          professor is talking about it, it gives me a chance to test myself as well as 
+          learn from the professor if I do not understand.  Its different than having to 
+          go from one slide to another because I do not see the whole picture.  If I can see 
+          more of what I am learning at once, then I can understand why I am learning 
+          something and how it applies.
+        </p>
+        <p style="text-indent: 5em;" >
+          All in all, the demos really showed me some cool things about what modern technology 
+          can do and what it can improve on.  I like the fact that a user can visually 
+          be somewhere else while their body is here.  Its a unique experience to be able to 
+          emulate and visually show.  Pros I can see that the Cave2 Or SAGE2 being used in 
+          education based situations.  Where you have a class and the professor is trying 
+          to demo a lot of things, or show a lot of information to students.  The cons would 
+          be that the students would have a lot of information inf the professor did not 
+          manage the space properly.  The professor could display the entire day's course 
+          work and work through it around the room.  The Cave could be used in a similar way 
+          to enable students to be able to interact with the information that the professor 
+          is giving to their students.  Pros of AR and VR is that AR could be used to visualize 
+          before doing anything.  Being able to see diagnostics information before and whie 
+          doing surgery would enable the doctor to do more precise work and be able to 
+          adjust his or her surgery to accomodate to the patient.  For a car repair shop, be 
+          able to display a broken down version of an engine and see the part that is not 
+          working properly and repair it properly without wasting extra time.  Cons would be 
+          a world where everything is virtual.  There would be less and less human interaction 
+          and more and more virtual interaction.  Losing the human sense of life and enabling 
+          and more robotic sense of life.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Tim Choh, George Poulos, Edmond Zalenski</p>
+</footer>
+
+</body>
+</html>
