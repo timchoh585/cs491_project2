@@ -106,7 +106,13 @@
       <h1>CS 491 - project 2 -- Here Comes the Sun</h1>
       <p></p>
       <hr>
-      <div>
+      <div class="tab">
+        <button class="tablinks" onclick="openType(event, 'pj')" id="defaultOpen">Project Description</button>
+        <button class="tablinks" onclick="openType(event, 'uf')">Unique Finds</button>
+        <button class="tablinks" onclick="openType(event, 'scaa')">Source Code and Assets</button>
+      </div>
+
+      <div id="pj" class="tabcontent">
         <h3>Project Description</h3>
         <p style="text-indent :5em;" >    
           For the second project of the AR/VR class, we were asked to build a viewable solar system 
@@ -152,14 +158,65 @@
           different VR systems out there.
         </p>
       </div>
+      <div id="uf" class="tabcontent">
+        <h3>Unique Finds</h3>
+        <p style="text-indent :5em;" >    
+          This project had a few unique finds, or intersting things.  In terms of planetary information, 
+          many planetary systems had only one star and one planet.  It is unique to us because one would thing 
+          that many stars would have graviational pulls that would attract different meteors create an orbit 
+          from the meteor.  As seen by many different applications on the web, there are frequent meteor showers 
+          in different parts of the world that are visible to us people through telescopes and sometimes 
+          just by staring up at night.  We, as people, do not see every different meteor traveling through 
+          space, but one can assume that there are more than we can see.  With that, we did see data on 
+          some systems with a ton of planets as well.
+        </p>
+        <p style="text-indent :5em;" >    
+          The systems with many different planets also had a nice range of 'livable' conditions for us humans.
+            This also peaked our interest as we found a lot of planets, in different systems, that could 
+          potentially house us when Earth becomes overpopulated.  That is, if we ever find a way to do 
+          light speed travel or even long distance travel across millions of miles of open space.  But I 
+          digress, seeing many systems with habitable planets is intersting.  What classifies a planet as 
+          habitable versus not habitable?  Do we have the technology to determine if a planet is even in a 
+          condition that we can cleary state as habitable or not?  Whatever the case may be, space companies 
+          were able to clasify more planets as hibitable than I had originally thought.
+        </p>
+      </div>
+      <div id="scaa" class="tabcontent">
+        <h3>Source Code and Assets</h3>
+        <p style="text-indent :5em;" >
+          Our team didn't use any assets outside of the ones that our professor, Andy Johnson, had provided 
+          to us from his templates.  In terms of actual data though, we got all of our data from 
+          <a href="https://exoplanetarchive.ipac.caltech.edu/">here</a>.  We used this site, aside from the 
+          others because the data seemed to compliment how we wanted to implement the data into this project.
+            The Exoplanet Archive had given us all the information that we needed as well as more than 600 
+          different systems!  We had over 2200 different systems from that website.  Many of them, as 
+          stated in the 'Unique Finds' section, had systems with one star and one planet.
+        </p>
+      </div>
+      
+      <script>
+        function openType(evt, type) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(type).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
     </div>
   </div>
 </div>
-
 <footer class="container-fluid text-center">
   <p>Tim Choh, George Poulos, Edmond Zalenski</p>
 </footer>
-
-
 </body>
 </html>
